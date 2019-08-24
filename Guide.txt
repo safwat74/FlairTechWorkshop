@@ -1,0 +1,11 @@
+Some notes:
+
+If you will run docker-composer:
+	-Please first run this command from the cmd in the project path "mvn -Dmaven.test.skip=true install".
+	-And after that you can run this command "docker-compose up"
+	now you can test the apllication http://localhost:8080/BHR
+	
+If you will test it on any IDE :
+	- First run this command in CMD "docker run -d -p 5432:5432 ghusta/postgres-world-db:2.3" to download the postgre image
+	- Second change db IP in spring.properties  with localhost IP
+	now you can test the apllication http://localhost:8080/BHR
